@@ -2,7 +2,7 @@ from tkinter import *
 
 root=Tk()
 root.title("restaurant pos")
-root.geometry("800x800+300+300")
+root.geometry("800x420+0+20")
 root.resizable(False, False)
 
 def b1event():
@@ -18,7 +18,7 @@ def b1event():
 
 b1=Button(root, text="table1", command = b1event,  width=20, height=7, overrelief="solid")
 b1.pack()
-b1.place(x=30, y=30)  
+b1.place(x=40, y=30)  
 
 # chkValue = tk.BooleanVar() 
 # chkValue.set(True)
@@ -55,7 +55,7 @@ def b3event():
   
 b3=Button(root, text="table3",command = b3event,fg = 'yellow', bg = 'red',width=20, height=7, overrelief="solid")
 b3.pack()
-b3.place(x=30, y=200)
+b3.place(x=560, y=30)
 
 def b4event():
     if(b4['text'] == 'table4'):
@@ -71,7 +71,7 @@ def b4event():
   
 b4=Button(root, text="table4",command = b4event,fg = 'yellow', bg = 'red', width=20, height=7, overrelief="solid")
 b4.pack()
-b4.place(x=300, y=200)
+b4.place(x=40, y=200)
 
 
 b2=Button(root, text="table2", command = b2event,fg = 'yellow', bg = 'red',width=20, height=7, overrelief="solid")
@@ -91,7 +91,7 @@ def b5event():
 
 b5=Button(root, text="table5",command = b5event,fg = 'yellow', bg = 'red',width=20, height=7, overrelief="solid")
 b5.pack()
-b5.place(x=30, y=370)
+b5.place(x=300, y=200)
 
 def b6event():
     if(b6['text'] == 'table6'):
@@ -107,7 +107,8 @@ def b6event():
   
 b6=Button(root, text="table6",command = b6event,fg = 'yellow', bg = 'red', width=20, height=7, overrelief="solid")
 b6.pack()
-b6.place(x=300, y=370)
+b6.place(x=560, y=200)
 
 
 root.mainloop()
+
